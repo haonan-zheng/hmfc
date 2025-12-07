@@ -12,7 +12,7 @@ all times (z = 0 - 30).
 
 halo definition: M_200m and M_200c (M_500c); 
 
-quantities: dn_dlog10M, dn_dM, n(>M), f(nu); 
+quantities: dn_dlog10M, dn_dM, n(>M), f($\nu$); 
 
 cosmology: Planck13, Planck15, Planck18, and user-customized cosmologies; 
 
