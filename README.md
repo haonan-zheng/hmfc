@@ -34,7 +34,7 @@ It provides a unified interface for cosmology, power spectrum, mass definition, 
 ###  Power spectrum
 
 - Analytic **BBKS** transfer function
-- User-supplied $(k,$ $P(k))$ tables
+- User-provided $(k,$ $P(k))$ tables
 - Automatic $\sigma_8$ normalization
 - Cached internal grids with logarithmic spacing
 
