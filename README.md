@@ -55,7 +55,7 @@ Extendable model API for custom HMF fits.
 
 ```python
 import numpy as np
-from hmfc import hmf, Cosmology
+from src import hmf, Cosmology
 
 cosmo = Cosmology.planck13()
 m = np.logspace(-6, 15, 22)
