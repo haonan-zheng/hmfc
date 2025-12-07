@@ -1,4 +1,3 @@
-# hmfc
 # Halo Mass Function Calculator (hmfc)
 
 # Halo mass function calculator for haloes at: 
@@ -9,10 +8,12 @@ all environments (overdensity > -0.99), and
 
 all times (z = 0 - 30). 
 
-# Supported halo definition: M_200m and M_200c (M_500c); 
+# Supported functions
 
-supported quantities: dn_dlog10M, dn_dM, n(>M), f(nu); 
+halo definition: M_200m and M_200c (M_500c); 
 
-supported cosmology: Planck13, Planck15, Planck18, and user-customized cosmologies, 
+quantities: dn_dlog10M, dn_dM, n(>M), f(nu); 
 
-supported power spectrum: BBKS, and user-customized powerspec tables. 
+cosmology: Planck13, Planck15, Planck18, and user-customized cosmologies, 
+
+power spectrum: BBKS, and user-customized powerspec tables. 
