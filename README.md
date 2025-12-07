@@ -40,7 +40,7 @@ It provides a unified interface for cosmology, power spectrum, mass definition, 
 
 ###  HMF models
 
-Included models:
+Included models (will include more models in future versions): 
 
 - **Press–Schechter**
 - **Sheth–Tormen**
