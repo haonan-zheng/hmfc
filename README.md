@@ -2,15 +2,15 @@
 
 # Halo mass function calculator for haloes at: 
 
-all scales ($10^{-6} - 10^{16} \, \mathrm{M_{\!\odot}}$), 
+all scales ($10^{-6} - 10^{16} \mathrm{M_{\odot}}$), 
 
-all environments (overdensity > -0.99), and 
+all environments (overdensity $\delta > -0.99$), and 
 
-all times (z = 0 - 30). 
+all times ($z = 0 - 30$). 
 
 # Supported functions
 
-halo definition: M_200m and M_200c (M_500c); 
+halo definition: $M_\mathrm{200m}$ and $M_\mathrm{200c}$ ($M_\mathrm{500c}$); 
 
 quantities: dn_dlog10M, dn_dM, n(>M), f($\nu$); 
 
