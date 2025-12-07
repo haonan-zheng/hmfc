@@ -2,7 +2,7 @@
 
 # Halo mass function calculator for haloes at: 
 
-all scales (10^-6 - 10^16 M_sun), 
+all scales ($10^{-6}$ - $10^{16}$ $\mathrm{M_\odot}$), 
 
 all environments (overdensity > -0.99), and 
 
