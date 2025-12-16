@@ -62,3 +62,21 @@ m = np.logspace(-6, 15, 22)
 
 hmf_predict = hmf(m, z=0, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", mass_definition="M200c")
 print(hmf_predict)
+
+##########
+import matplotlib.pyplot as plt
+
+hmf_predict_st = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='ST', mass_definition="M200m")
+hmf_predict_reed07 = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='reed07', mass_definition="M200m")
+hmf_predict_zheng25 = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='zheng25', mass_definition="M200m")
+
+plt.plot(m, hmf_predict_st, label='$ST$')
+plt.plot(m, hmf_predict_reed07, label='$Reed07$')
+plt.plot(m, hmf_predict_zheng25, label='$Zheng25$')
+
+plt.xscale('log')
+plt.yscale('log')
+plt.xlabel(r'$M_{200}/\mathrm{M}_\odot$')
+plt.ylabel(r'$\mathrm{d}n/\mathrm{d}\log_{10}M/(Mpc)^{-3}$')
+plt.legend()
+plt.show()
