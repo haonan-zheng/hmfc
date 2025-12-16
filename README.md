@@ -66,13 +66,13 @@ print(hmf_predict)
 ##########
 import matplotlib.pyplot as plt
 
-hmf_predict_st = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='ST', mass_definition="M200m")
+hmf_predict_st = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='st', mass_definition="M200m")
 hmf_predict_reed07 = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='reed07', mass_definition="M200m")
 hmf_predict_zheng25 = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='zheng25', mass_definition="M200m")
 
-plt.plot(m, hmf_predict_st, label='$ST\ (z=10)$')
-plt.plot(m, hmf_predict_reed07, label='$Reed07\ (z=10)$')
-plt.plot(m, hmf_predict_zheng25, label='$Zheng25\ (z=10)$')
+plt.plot(m, hmf_predict_st, label=r'$ST\ (z=10)$')
+plt.plot(m, hmf_predict_reed07, label=r'$Reed07\ (z=10)$')
+plt.plot(m, hmf_predict_zheng25, label=r'$Zheng25\ (z=10)$')
 
 plt.xscale('log')
 plt.yscale('log')
