@@ -70,9 +70,9 @@ hmf_predict_st = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbk
 hmf_predict_reed07 = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='reed07', mass_definition="M200m")
 hmf_predict_zheng25 = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='zheng25', mass_definition="M200m")
 
-plt.plot(m, hmf_predict_st, label='$ST$')
-plt.plot(m, hmf_predict_reed07, label='$Reed07$')
-plt.plot(m, hmf_predict_zheng25, label='$Zheng25$')
+plt.plot(m, hmf_predict_st, label='$ST\ (z=10)$')
+plt.plot(m, hmf_predict_reed07, label='$Reed07\ (z=10)$')
+plt.plot(m, hmf_predict_zheng25, label='$Zheng25\ (z=10)$')
 
 plt.xscale('log')
 plt.yscale('log')
