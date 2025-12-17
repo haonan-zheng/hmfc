@@ -66,17 +66,23 @@ print(hmf_predict)
 ##########
 import matplotlib.pyplot as plt
 
-hmf_predict_st = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='st', mass_definition="M200m")
-hmf_predict_reed07 = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='reed07', mass_definition="M200m")
-hmf_predict_zheng25 = hmf(m, z=10, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='zheng25', mass_definition="M200m")
+m = np.logspace(4.25, 11.75, 31)
+z = 10
 
-plt.plot(m, hmf_predict_st, label=r'$ST\ (z=10)$')
-plt.plot(m, hmf_predict_reed07, label=r'$Reed07\ (z=10)$')
-plt.plot(m, hmf_predict_zheng25, label=r'$Zheng25\ (z=10)$')
+hmf_predict_st = hmf(m, z, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='st', mass_definition="M200m")
+hmf_predict_reed07 = hmf(m, z, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='reed07', mass_definition="M200m")
+hmf_predict_zheng25 = hmf(m, z, cosmo=cosmo, quantity="dn_dlog10M", powerspec="bbks", model='zheng25', mass_definition="M200m")
+
+plt.plot(m, hmf_predict_st, label=r'$ST\ (z=10)$', c='k')
+plt.plot(m, hmf_predict_reed07, label=r'$Reed07\ (z=10)$', c='b')
+plt.plot(m, hmf_predict_zheng25, label=r'$Zheng25\ (z=10)$', c='r')
 
 plt.xscale('log')
 plt.yscale('log')
-plt.xlabel(r'$M_{200}/\mathrm{M}_\odot$')
+plt.xlim(1e4, 1e12)
+plt.ylim(1e-7, 1e5)
+plt.xlabel(r'$M_{200}/M_\odot$')
 plt.ylabel(r'$\mathrm{d}n/\mathrm{d}\log_{10}M/(Mpc)^{-3}$')
 plt.legend()
 plt.show()
+
